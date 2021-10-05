@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:context=".Login">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:id="@+id/heading">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+       <!-- <TextView
+            android:id="@+id/next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/yellow"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           />-->
+        </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+
+
+
+    <include
+        layout="@layout/stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/include_layout"
+        android:layout_centerVertical="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scroll"
+        android:layout_below="@id/include_layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <ToggleButton
+                    android:id="@+id/rb1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btru_button"
+                    android:padding="10dp"
+                    android:text="BTru"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textOff="BTru"
+                    android:textOn="BTru"
+
+                    />
+                <ToggleButton
+                    android:id="@+id/rb2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/radiobutton_lookup"
+                    android:textAllCaps="false"
+                    android:text="SpreadTrees,\n Not AIDS"
+                    android:textAlignment="center"
+                    android:textOff="SpreadTrees,\n Not AIDS"
+                    android:textOn="SpreadTrees,\nNot AIDS"
+                   />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <ToggleButton
+                    android:id="@+id/rb11"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/peer_button"
+                    android:padding="10dp"
+                    android:text="Peer Education"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textOff="Peer Education"
+                    android:textOn="Peer Education"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/rb12"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/social_media_button"
+                    android:textAllCaps="false"
+                    android:text="Social Media Content Development"
+                    android:textAlignment="center"
+                    android:textOff="Social Media Content Development"
+                    android:textOn="Social Media Content Development"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/rb3"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/notime_button"
+                        android:padding="10dp"
+                        android:text="NoTimeToWait"
+                        android:textOff="NoTimeToWait"
+                        android:textOn="NoTimeToWait"
+                        android:textAlignment="center"
+                       />
+
+                    <ToggleButton
+                        android:id="@+id/rb4"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/web_button"
+                        android:padding="10dp"
+                        android:text="Website Design"
+                        android:textOn="Website Design"
+                        android:textOff="Website Design"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/rb5"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/youth_button"
+                    android:padding="10dp"
+                    android:text="Youth-HIV"
+                    android:textAlignment="center"
+                    android:textOff="Youth-HIV"
+                    android:textOn="Youth-HIV" />
+
+                <ToggleButton
+                    android:id="@+id/rb6"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/live_button"
+                    android:padding="10dp"
+                    android:text="LiveLifeLoving"
+                    android:textAlignment="center"
+                    android:textColor="#7E000000"
+                    android:textOff="LiveLifeLoving"
+                    android:textOn="LiveLifeLoving" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/rb7"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/hour_button"
+                        android:padding="10dp"
+                        android:text="24 Hour Wake"
+                        android:textOn="24 Hour Wake"
+                        android:textOff="24 Hour Wake"
+                        android:textAlignment="center"
+                        android:textColor="#86000000" />
+
+                    <ToggleButton
+                        android:id="@+id/rb8"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/covid_button"
+                        android:padding="10dp"
+                        android:text="HeyCOVID19"
+                        android:textOn="HeyCOVID19"
+                        android:textOff="HeyCOVID19"
+                        android:textAlignment="center"
+                        android:textColor="#8A000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/rb9"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/inter_button"
+                        android:padding="10dp"
+                        android:text="International Aids Conference"
+                        android:textOff="International Aids \n Conference"
+                        android:textOn="International Aids \n Conference"
+                        android:textAlignment="center"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/rb10"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/other_button"
+                        android:padding="10dp"
+                        android:text="Other"
+                        android:textOn="Other"
+                        android:textOff="Other"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Submit_project"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rounded_buttons"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

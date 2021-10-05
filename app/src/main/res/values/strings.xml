@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LSA Mobile Application</string>
+    <string name="link_to_signUp"> Not Registered? Sign me up</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="notification">We will email you instructions on how to reset it.</string>
+    <string name="email">email@letsstopaids.org</string>
+    <string name="password">password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="thanks">THANKS FOR SUPPORTING US DURING THIS WEEK</string>
+    <string name="hoursinfo">How many hours, approximately, you have been involved in projects?</string>
+    <string name="feeling">How are you feeling Today?</string>
+
+</resources>

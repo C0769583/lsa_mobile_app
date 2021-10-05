@@ -1,0 +1,2 @@
+rootProject.name = "LSA Mobile Application"
+include ':app'

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#333333"
+    tools:context=".Login">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="309dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/login_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/email"
+            android:textColorHint="#A9A9A9"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+
+            />
+
+
+
+            <EditText
+                android:id="@+id/login_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="password"
+                    android:textColorHint="#A9A9A9"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/ic_hide_password"
+                android:maxLines="1"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_buttons"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Log In"
+            android:textColor="@color/black"/>
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/progressBar_login"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/teal_200"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/forget_pwd"
+            android:clickable="true"
+            android:text="Forget password?"
+            android:textAlignment="center"
+            android:textColor="#A9A9A9"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/to_registration"
+            android:clickable="true"
+            android:text="@string/link_to_signUp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:drawableRight="@drawable/ic_arrow"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:context=".Login">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:id="@+id/heading">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+
+
+    <include
+        layout="@layout/stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/include_layout"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/thanks"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:textStyle="bold"
+           android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hoursinfo"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"/>
+
+        <!--   <hiennguyen.me.circleseekbar.CircleSeekBar
+            android:id="@+id/circular"
+            android:layout_width="200dp"
+            android:layout_height="187dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:padding="64dp"
+            app:csb_arcColor="#A9A9A9"
+            app:csb_arcWidth="6dp"
+            app:csb_max="40"
+            app:csb_min="0"
+            app:csb_points="300"
+            app:csb_progress="5"
+            app:csb_progressColor="@color/yellow"
+            app:csb_progressWidth="12dp"
+            app:csb_step="5"
+            app:csb_textColor="@color/color_text"
+            app:csb_textSize="36sp"
+            app:csb_thumbDrawable="@drawable/ic_colored_circle"
+            app:csb_thumbSize="36dp" />-->
+
+
+        <NumberPicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/picker"
+            android:layout_marginTop="40dp"
+            android:theme="@style/numberpickertheme"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Submit_hours"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_buttons"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

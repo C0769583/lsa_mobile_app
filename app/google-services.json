@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "872964837446",
+    "firebase_url": "https://lsa-mobile-app---android-default-rtdb.firebaseio.com",
+    "project_id": "lsa-mobile-app---android",
+    "storage_bucket": "lsa-mobile-app---android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872964837446:android:d658df5df65d8944277a47",
+        "android_client_info": {
+          "package_name": "com.lsa.lsamobileapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872964837446-ilnctsoisict2mcq3g6caibi3unrnd2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgBqqqf_TFvr9g95we5nURjMwuhB6U1zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872964837446-ilnctsoisict2mcq3g6caibi3unrnd2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
